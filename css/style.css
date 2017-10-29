@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:Regular,Regular+italic,Bold,Bold+Italic');
+html {
+    background-color: white;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+@media (max-width: 640px) {
+    body {
+        margin: 0;
+        padding: 8px;
+    }
+}
+
+a,
+a:focus,
+a:active,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+    color: #045C95;
+    text-decoration: underline;
+    text-decoration-color: #045C95;
+    text-decoration-style: underline;
+    transform: scale(120%);
+}
+
+a:visited {
+    text-decoration: underline;
+    text-decoration-color: #323232;
+    text-decoration-style: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-em {
+    font-style: italic;
+}
+
+.text-strong {
+    font-weight: bold;
+}
+
+hr.small-sep {
+    max-width: 20%;
+    width: 8rem;
+    border: none;
+    border-top: 1px solid #ccc;
+    clear: both;
+}
+
+.vcard {
+    margin: 4em auto;
+    padding: 2em;
+    background-color: #fcfcfc;
+    box-shadow: 0 0.3rem 0.7rem #ccc;
+    border: 1px solid #eee;
+    max-width: 28em;
+}
+
+@media (max-width: 640px) {
+    .vcard {
+        margin: 0.5em auto;
+        padding: 1em;
+        max-width: 28em;
+    }
+}
+
+.vcard *:last-child {
+    margin-bottom: 0;
+}
+
+.vcard .heading {
+    text-align: right;
+    padding: 0 0 0 calc(120px + 0.5rem);
+}
+
+@media (max-width: 640px) {
+    .vcard .heading {
+        text-align: left;
+        padding: 0;
+    }
+}
+
+.vcard .title,
+.vcard .name,
+.vcard .dipl {
+    display: block;
+}
+
+.vcard .title {
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1em;
+    vertical-align: top;
+}
+
+.vcard .logo {
+    float: left;
+    margin: 0 0.5rem 0.5rem calc(-120px - 0.5rem);
+}
+
+@media (max-width: 640px) {
+    .vcard .logo {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0 auto 1.0rem auto;
+    }
+}
+
+.vcard .name {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+.vcard .name .lname {
+    font-variant: small-caps;
+}
+
+.vcard .dipl {
+    font-style: italic;
+    line-height: 2em;
+}
+
+.vcard .addr {
+    font-size: 1.2rem;
+}
+
+.vcard .addr .row+.row:before {
+    content: "—";
+    margin: 0 0.2em;
+}
+
+@media (max-width: 640px) {
+    .vcard .addr .row {
+        display: block;
+    }
+    .vcard .addr .row+.row:before {
+        content: "";
+    }
+}
+
+dl dt,
+dl dd {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+dl dt {
+    font-weight: light;
+    float: left;
+    text-align: right;
+    padding-right: 1em;
+    width: 120px;
+}
+
+dl dd {
+    padding-left: 120px;
+}
+
+dl dd .info {
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media (max-width: 640px) {
+    dl dt {
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+    dl dd {
+        padding-left: 0;
+        width: 100%;
+    }
+}
